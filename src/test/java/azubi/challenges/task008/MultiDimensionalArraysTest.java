@@ -1,4 +1,4 @@
-package test.java.azubi.challenge.firstyear;
+package azubi.challenges.task008;
 
 import org.junit.Test;
 
