@@ -27,7 +27,18 @@ public class SumPair {
      * @return true, if one pairs' total equals given sum
      */
     public static boolean sumPairExists(int sum, int[] numbers) {
-        throw new UnsupportedOperationException("Implement me!");
+        if (numbers.length <= 2) {
+            return false;
+        }
+        
+        for (int i = 0; i < numbers.length; i++) {
+            for (int j = i; j < numbers.length; j++) {
+                if(numbers[i] + numbers[j] == sum) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 
 }
